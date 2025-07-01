@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Network Packet Sniffer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .terminal {
+            background-color: #1e1e1e;
+            color: #d4d4d4;
+            font-family: 'Courier New', monospace;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            overflow-y: auto;
+            max-height: 400px;
+        }
+        .protocol-http { color: #4EC9B0; }
+        .protocol-tcp { color: #569CD6; }
+        .protocol-udp { color: #DCDCAA; }
+        .protocol-icmp { color: #CE9178; }
+        .ip-src { color: #9CDCFE; }
+        .ip-dst { color: #9CDCFE; }
+        .payload { color: #B5CEA8; }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 p-8">
+    <div class="max-w-6xl mx-auto">
+        <div class="flex items-center mb-8">
+            <img src="https://placehold.co/60x60" alt="Cybersecurity shield icon with network connections" class="mr-4 rounded-full" />
+            <div>
+                <h1 class="text-3xl font-bold text-green-500">Network Packet Sniffer</h1>
+                <p class="text-gray-400">Cybersecurity analysis tool for monitoring network traffic</p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+            <div class="bg-gray-800 p-6 rounded-lg">
+                <h2 class="text-xl font-semibold mb-4 text-purple-400">📡 Capture Settings</h2>
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium mb-1">Interface</label>
+                        <select class="w-full bg-gray-700 border border-gray-600 rounded px-3 py-2">
+                            <option>eth0 (Ethernet)</option>
+                            <option>w
